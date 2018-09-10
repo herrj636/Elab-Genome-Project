@@ -68,7 +68,7 @@
               .attr("height", sankey.nodeWidth())
               .attr("width", function(d) { return d.dy; })
               .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
-              .style("stroke", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
+              
             .append("title")
               .text(function(d) { return d.name + "\n" + format(d.value); });
             
